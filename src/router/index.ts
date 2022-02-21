@@ -1,19 +1,46 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { pccatch } from '@/utils/catch'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/home',
-    component: () => import('../components/home.vue')
+    path: '/',
+    redirect: '/main'
   },
   {
-    path: '/about',
-    component: () => import('../components/about.vue')
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/login/login.vue')
+  },
+  {
+    path: '/main',
+    name: 'main',
+    component: () => import('@/views/main/main.vue'),
+    children: [
+      {
+        path: '/main',
+        redirect: '/main/analysis/overview'
+      }
+    ]
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })
+router.beforeEach((to) => {
+  if (to.path !== '/login') {
+    const token = pccatch.getCatch('token')
 
+    if (!token) {
+      console.log('1')
+
+      return '/login'
+    }
+  }
+
+  // if (to.path === '/mian') {
+
+  // }
+})
 export default router

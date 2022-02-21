@@ -1,0 +1,72 @@
+卷 系统 的文件夹 PATH 列表
+卷序列号为 D0BC-4B83
+C:.
++---assets
+|   +---css
+|   \---img
++---base-ui
+|   +---card
+|   +---descriptions
+|   +---dialog
+|   +---form
+|   +---link
+|   +---src
+|   \---table
++---components
+|   +---nav-header
+|   +---nav-menu
+|   +---pc-dialog
+|   +---pc-form
+|   +---pc-table
+|   \---src
++---global
++---network
+|   \---request
+|       +---login
+|       +---main
+|       |   +---product
+|       |   \---stystem
+|       \---user
++---router
+|   \---main
+|       +---analysis
+|       +---product
+|       |   +---category
+|       |   \---goods
+|       +---story
+|       |   +---chat
+|       |   \---list
+|       \---system
+|           +---department
+|           +---menu
+|           +---role
+|           \---user
++---store
+|   +---login
+|   \---mian
+|       \---system
++---utils
+\---views
+    +---login
+    |   \---loginChild
+    \---main
+        +---analysis
+        |   \---config
+        |       \---src
+        +---product
+        |   \---config
+        |       +---category
+        |       |   \---src
+        |       \---goods
+        |           \---src
+        +---story
+        \---system
+            \---config
+                +---department
+                |   \---src
+                +---menu
+                |   \---src
+                +---role
+                |   \---src
+                \---user
+                    \---src

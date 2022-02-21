@@ -1,0 +1,226 @@
+卷 系统 的文件夹 PATH 列表
+卷序列号为 D0BC-4B83
+C:.
+│  App.vue
+│  main.ts
+│  shims-vue.d.ts
+│  tree.json
+│  tree.txt
+│  
+├─assets
+│  ├─css
+│  │      reset.css
+│  │      
+│  └─img
+│          acg.gy_02.jpg
+│          login-bg.svg
+│          logo.svg
+│          
+├─base-ui
+│  ├─card
+│  │      card.vue
+│  │      
+│  ├─descriptions
+│  │      descriptions.vue
+│  │      
+│  ├─dialog
+│  │      dialog.vue
+│  │      
+│  ├─form
+│  │      form.vue
+│  │      type.ts
+│  │      
+│  ├─link
+│  │      link.vue
+│  │      
+│  ├─src
+│  │      index.ts
+│  │      
+│  └─table
+│          table.vue
+│          
+├─components
+│  ├─nav-header
+│  │      navHeader.vue
+│  │      
+│  ├─nav-menu
+│  │      navMenu.vue
+│  │      
+│  ├─pc-dialog
+│  │      pcDialog.vue
+│  │      
+│  ├─pc-form
+│  │      pcForm.vue
+│  │      
+│  ├─pc-table
+│  │      type.ts
+│  │      
+│  └─src
+│          index.ts
+│          
+├─global
+│      index.ts
+│      register-element.ts
+│      
+├─network
+│  │  index.ts
+│  │  
+│  └─request
+│      │  config.ts
+│      │  request.ts
+│      │  type.ts
+│      │  
+│      ├─login
+│      │      login.ts
+│      │      type.ts
+│      │      
+│      ├─main
+│      │  ├─product
+│      │  │      product.ts
+│      │  │      
+│      │  └─stystem
+│      └─user
+│              type.ts
+│              user.ts
+│              
+├─router
+│  │  index.ts
+│  │  
+│  └─main
+│      ├─analysis
+│      │      dashboard.ts
+│      │      overview.ts
+│      │      
+│      ├─product
+│      │  ├─category
+│      │  │      category.ts
+│      │  │      
+│      │  └─goods
+│      │          goods.ts
+│      │          
+│      ├─story
+│      │  ├─chat
+│      │  │      chat.ts
+│      │  │      
+│      │  └─list
+│      │          list.ts
+│      │          
+│      └─system
+│          ├─department
+│          │      department.ts
+│          │      
+│          ├─menu
+│          │      menu.ts
+│          │      
+│          ├─role
+│          │      role.ts
+│          │      
+│          └─user
+│                  user.ts
+│                  
+├─store
+│  │  index.ts
+│  │  type.ts
+│  │  
+│  ├─login
+│  │      login.ts
+│  │      type.ts
+│  │      
+│  └─mian
+│      └─system
+│              index.ts
+│              type.ts
+│              
+├─utils
+│      catch.ts
+│      fomatDataUtc.ts
+│      getlist.ts
+│      getTree.ts
+│      routerMenu.ts
+│      
+└─views
+    ├─login
+    │  │  login.vue
+    │  │  
+    │  └─loginChild
+    │          account.config.ts
+    │          login-account.vue
+    │          login-panel.vue
+    │          login-phone.vue
+    │          
+    └─main
+        │  main.vue
+        │  
+        ├─analysis
+        │  │  dashboard.vue
+        │  │  overview.vue
+        │  │  
+        │  └─config
+        │      │  linkArr.ts
+        │      │  
+        │      └─src
+        │              index.ts
+        │              
+        ├─product
+        │  │  category.vue
+        │  │  goods.vue
+        │  │  
+        │  └─config
+        │      ├─category
+        │      │  │  newConfig.ts
+        │      │  │  searchConfig.ts
+        │      │  │  tableConfig.ts
+        │      │  │  
+        │      │  └─src
+        │      │          index.ts
+        │      │          
+        │      └─goods
+        │          │  newConfig.ts
+        │          │  searchConfig.ts
+        │          │  tableConfig.ts
+        │          │  
+        │          └─src
+        │                  index.ts
+        │                  
+        ├─story
+        │      chat.vue
+        │      list.vue
+        │      
+        └─system
+            │  department.vue
+            │  menu.vue
+            │  role.vue
+            │  user.vue
+            │  
+            └─config
+                ├─department
+                │  │  newConfig.ts
+                │  │  searchConfig.ts
+                │  │  tableConfig.ts
+                │  │  
+                │  └─src
+                │          index.ts
+                │          
+                ├─menu
+                │  │  newConfig.ts
+                │  │  tableConfig.ts
+                │  │  
+                │  └─src
+                │          index.ts
+                │          
+                ├─role
+                │  │  newConfig.ts
+                │  │  searchConfig.ts
+                │  │  tableConfig.ts
+                │  │  
+                │  └─src
+                │          index.ts
+                │          
+                └─user
+                    │  newConfig.ts
+                    │  searchConfig.ts
+                    │  tableConfig.ts
+                    │  
+                    └─src
+                            index.ts
+                            
