@@ -20,6 +20,8 @@ export function requestUserInfo(id: number) {
   })
 }
 export function requerstMenus(id: number) {
+  console.log(LoingApi.UserMenus + id + '/menu')
+
   return request.get<any>({
     url: LoingApi.UserMenus + id + '/menu'
   })

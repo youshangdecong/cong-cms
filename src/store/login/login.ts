@@ -37,20 +37,30 @@ const loginModule: Module<loginState, rootState> = {
       if (payload.name && payload.password) {
         const resuleData = await requestLoginAction(payload)
         // 保存token
+        console.log(resuleData)
+
         const { id, token } = resuleData.data
         commit('changeToken', token)
 
         // console.log(resuleData)
         // 保存 用户信息
         const userInfo = await requestUserInfo(id)
+
         const userInfoData = userInfo.data
         pccatch.setCatch('userInfo', userInfoData)
         commit('changeUserInfo', userInfoData)
 
         //获取用户菜单
-        const userMenus = await requerstMenus(id)
+        // console.log(userInfo)
+
+        const roleId = userInfoData.role.id
+        console.log(userInfo)
+
+        const userMenus = await requerstMenus(roleId)
+        console.log(userMenus)
 
         const MenusData = userMenus.data
+
         routerMenu(MenusData, router)
 
         pccatch.setCatch('userMenus', MenusData)
